@@ -1,0 +1,1433 @@
+INFO  started: Metals version 0.8.0 in workspace '/media/saurav/study&document/scalaProject'
+INFO  time: initialize in 3.12s
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/hello.scala
+INFO  no build target: using presentation compiler with only scala-library
+Feb 21, 2020 9:26:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 138
+WARN  no build target for: /media/saurav/study&document/scalaProject/hello.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/hello_world/hello.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/function/funtion.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/function/funtion.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/function/funtion.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/function/funtion.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/function/funtion.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/function/funtion.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/function/funtion.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/function/funtion.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/function/funtion.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/function/funtion.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/function/funtion.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/function/funtion.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/methods/m1.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/methods/m1.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/methods/m1.scala, 29, 29, 44)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/methods/m1.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/methods/m1.scala, 29, 29, 37)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/methods/m1.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/methods/m1.scala, 29, 29, 39)
+Feb 21, 2020 11:09:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.InterruptedException
+java.util.concurrent.CompletionException: java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:27)
+	at scala.meta.pc.OffsetParams.checkCanceled(OffsetParams.java:29)
+	at scala.meta.internal.metals.CompilerOffsetParams.checkCanceled(CompilerOffsetParams.scala:7)
+	at scala.meta.internal.pc.CompletionProvider.$anonfun$completions$1(CompletionProvider.scala:66)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)
+	at scala.collection.Iterator.toStream(Iterator.scala:1415)
+	at scala.collection.Iterator.toStream$(Iterator.scala:1414)
+	at scala.collection.AbstractIterator.toStream(Iterator.scala:1429)
+	at scala.collection.Iterator.$anonfun$toStream$1(Iterator.scala:1415)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1171)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1161)
+	at scala.collection.immutable.StreamIterator.$anonfun$next$1(Stream.scala:1061)
+	at scala.collection.immutable.StreamIterator$LazyCell.v$lzycompute(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator$LazyCell.v(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator.hasNext(Stream.scala:1055)
+	at scala.collection.convert.Wrappers$IteratorWrapper.hasNext(Wrappers.scala:31)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:134)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:40)
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:69)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:125)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:243)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:423)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:55)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at com.google.gson.Gson.toJson(Gson.java:648)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:145)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:59)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.lambda$handleRequest$1(RemoteEndpoint.java:281)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714)
+	... 8 more
+
+something's wrong: no file:///media/saurav/study%26document/scalaProject/methods/m1.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/methods/m1.scala, 29, 29, 44)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/methods/m1.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/methods/m1.scala, 29, 29, 37)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/methods/m1.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/methods/m1.scala, 29, 29, 38)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/methods/m1.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/methods/m1.scala, 29, 29, 39)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/methods/m1.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/methods/m1.scala, 29, 29, 41)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/methods/m1.scala in Array[String]RangePosition(file:///media/saurav/study%26document/scalaProject/methods/m1.scala, 29, 29, 42)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/methods/m1.scala in Array[String]RangePosition(file:///media/saurav/study%26document/scalaProject/methods/m1.scala, 29, 29, 42)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/methods/m1.scala in Array[String]RangePosition(file:///media/saurav/study%26document/scalaProject/methods/m1.scala, 29, 29, 42)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/methods/m1.scala in Array[String]RangePosition(file:///media/saurav/study%26document/scalaProject/methods/m1.scala, 29, 29, 42)
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/methods/m1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/methods/m1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/methods/m1.scala
+Feb 21, 2020 11:11:46 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Feb 21, 2020 11:11:46 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:137)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:155)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.HoverProvider.typedHoverTreeAt(HoverProvider.scala:236)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:25)
+
+Feb 21, 2020 11:11:47 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Feb 21, 2020 11:11:47 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:137)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:155)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.HoverProvider.typedHoverTreeAt(HoverProvider.scala:236)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:25)
+
+WARN  no build target for: /media/saurav/study&document/scalaProject/methods/m1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/methods/m1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/methods/m1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/classes/c1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/classes/c1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/classes/c1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/classes/c1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/classes/c1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/classes/c1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/classes/c1.scala
+Feb 21, 2020 11:23:59 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 21, 2020 11:24:00 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 21, 2020 11:24:00 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 21, 2020 11:24:00 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+WARN  no build target for: /media/saurav/study&document/scalaProject/classes/c1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits/trait1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits/trait1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits/callTrait.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits/callTrait.scala
+Feb 21, 2020 11:31:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2665
+Feb 21, 2020 11:33:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3097
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits/callTrait.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits/callTrait.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits/callTrait.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits/callTrait.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits/callTrait.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits/callTrait.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits/callTrait.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits/trait1.scala
+Feb 22, 2020 1:47:38 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 22, 2020 1:47:39 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 22, 2020 1:47:39 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 22, 2020 1:47:39 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits/trait1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/methods/m1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/methods/m1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/methods/m1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/methods/m1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/methods/m1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/methods/m1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/methods/m1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/methods/m1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/methods/m1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/methods/m1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/classes/c1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/classes/c1.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/classes/c1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/inputOutput/io.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/inputOutput/io.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/inputOutput/io.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/inputOutput/io.scala
+INFO  shutting down MetalsINFO  started: Metals version 0.8.0 in workspace '/media/saurav/study&document/scalaProject'
+INFO  time: initialize in 3.51s
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/classes/c1.scala
+INFO  no build target: using presentation compiler with only scala-library
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.0 in workspace '/media/saurav/study&document/scalaProject'
+INFO  time: initialize in 3.37s
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+INFO  no build target: using presentation compiler with only scala-library
+Feb 22, 2020 11:46:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+Feb 22, 2020 11:46:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4
+Feb 22, 2020 11:46:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+Feb 22, 2020 11:46:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+Feb 22, 2020 11:46:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6
+Feb 22, 2020 11:46:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9
+Feb 22, 2020 11:46:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10
+Feb 22, 2020 11:46:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13
+Feb 22, 2020 11:46:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15
+Feb 22, 2020 11:46:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14
+WARN  no build target for: /media/saurav/study&document/scalaProject/methods/m1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.0 in workspace '/media/saurav/study&document/scalaProject'
+INFO  time: initialize in 3.42s
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+Feb 23, 2020 12:37:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 547
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+INFO  started: Metals version 0.8.0 in workspace '/media/saurav/study&document/scalaProject'
+INFO  time: initialize in 3.69s
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+Feb 24, 2020 7:30:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 126
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+Feb 24, 2020 7:34:54 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 24, 2020 7:34:55 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 24, 2020 7:34:55 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 24, 2020 7:35:06 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:461)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.expected$1(CompletionProvider.scala:344)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:435)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 24, 2020 7:35:06 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: null
+Feb 24, 2020 7:35:10 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:461)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.expected$1(CompletionProvider.scala:344)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:435)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 24, 2020 7:35:10 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: null
+Feb 24, 2020 7:35:10 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:461)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.expected$1(CompletionProvider.scala:344)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:435)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 24, 2020 7:35:10 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: null
+Feb 24, 2020 7:35:12 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:461)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.expected$1(CompletionProvider.scala:344)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:435)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 24, 2020 7:35:12 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: null
+Feb 24, 2020 7:35:13 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:461)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.expected$1(CompletionProvider.scala:344)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:435)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 24, 2020 7:35:13 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: null
+Feb 24, 2020 7:35:13 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:461)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.expected$1(CompletionProvider.scala:344)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:435)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 24, 2020 7:35:13 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: null
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+Feb 24, 2020 8:30:18 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Feb 24, 2020 8:30:19 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:137)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:155)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.HoverProvider.typedHoverTreeAt(HoverProvider.scala:236)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:25)
+
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+Feb 24, 2020 8:47:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2926
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala in (Int, Int, Int)RangePosition(file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala, 605, 605, 618)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala in (Int, Int, Int)RangePosition(file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala, 605, 605, 618)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala in (Int, Int, Int)RangePosition(file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala, 605, 605, 618)
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala in (Int, Int)RangePosition(file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala, 605, 605, 614)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala in (Int, Int) => IntRangePosition(file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala, 606, 615, 620)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala in (Int, Int) => IntRangePosition(file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala, 606, 615, 620)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala in (Int, Int) => IntRangePosition(file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala, 606, 615, 620)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala in (Int, Int) => IntRangePosition(file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala, 606, 615, 620)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala in (Int, Int) => IntRangePosition(file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala, 606, 615, 620)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala in ((Int, Int) => Int, Int)RangePosition(file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala, 605, 605, 625)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala in (Int, Int) => IntRangePosition(file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala, 606, 615, 620)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala in (Int, Int) => IntRangePosition(file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala, 606, 615, 620)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala in (Int, Int) => IntRangePosition(file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala, 606, 615, 620)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala in (Int, Int) => IntRangePosition(file:///media/saurav/study%26document/scalaProject/anonymous/anonymous.scala, 606, 615, 620)
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+Feb 24, 2020 9:29:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4374
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+Feb 24, 2020 11:08:31 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 24, 2020 11:08:31 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 24, 2020 11:08:31 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/anonymous/anonymous.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/functionAndData/rational.scala in Array[String]RangePosition(file:///media/saurav/study%26document/scalaProject/functionAndData/rational.scala, 86, 86, 99)
+Feb 25, 2020 12:03:48 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:03:48 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:03:49 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:03:50 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:03:50 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:03:50 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:03:54 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/functionAndData/rational.scala in Array[String]RangePosition(file:///media/saurav/study%26document/scalaProject/functionAndData/rational.scala, 176, 176, 189)
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+Feb 25, 2020 12:08:21 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:08:21 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:08:21 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:08:21 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:08:23 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:08:24 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:08:24 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:08:25 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:08:25 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+Feb 25, 2020 12:39:33 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Feb 25, 2020 12:39:33 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:137)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:155)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.HoverProvider.typedHoverTreeAt(HoverProvider.scala:236)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:25)
+
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Feb 25, 2020 12:39:34 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Feb 25, 2020 12:39:34 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:137)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:155)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitionTypedTreeAt(PcDefinitionProvider.scala:88)
+	at scala.meta.internal.pc.PcDefinitionProvider.definition(PcDefinitionProvider.scala:22)
+
+Feb 25, 2020 12:40:11 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:40:11 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:42:00 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6764
+Feb 25, 2020 12:42:31 AM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: offset 278, count -1, length 366
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+INFO  started: Metals version 0.8.0 in workspace '/media/saurav/study&document/scalaProject'
+INFO  time: initialize in 2.96s
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/functionAndData/rational.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+Feb 25, 2020 7:17:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Vector[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 174, 174, 182)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Vector[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 182, 182, 193)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Vector[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 182, 182, 193)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Vector[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 182, 182, 193)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Vector[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 182, 182, 193)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Vector[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 182, 182, 193)
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+Feb 25, 2020 9:54:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1310
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Vector[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 182, 182, 193)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Vector[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 182, 182, 193)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Vector[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 182, 182, 193)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Vector[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 182, 182, 193)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Vector[Vector[Int]]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 175, 175, 194)
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Array[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 181, 181, 191)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Array[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 181, 181, 191)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Array[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 181, 181, 191)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Array[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 181, 181, 191)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Array[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 181, 181, 191)
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+Feb 26, 2020 1:56:00 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3829
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in scala.collection.mutable.ArrayBuffer[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 150, 150, 171)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in scala.collection.mutable.ArrayBuffer[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 150, 150, 164)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in scala.collection.mutable.ArrayBuffer[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 150, 150, 165)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in scala.collection.mutable.ArrayBuffer[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 150, 150, 166)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in scala.collection.mutable.ArrayBuffer[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 150, 150, 168)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in scala.collection.mutable.ArrayBuffer[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 150, 150, 174)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in scala.collection.mutable.ArrayBuffer[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 162, 162, 183)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in scala.collection.mutable.ArrayBuffer[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 162, 162, 177)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in scala.collection.mutable.ArrayBuffer[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 162, 162, 178)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in scala.collection.mutable.ArrayBuffer[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 162, 162, 178)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in scala.collection.mutable.ArrayBuffer[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 162, 162, 178)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in scala.collection.mutable.ArrayBuffer[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 162, 162, 178)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 186, 186, 201)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 186, 186, 194)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 186, 186, 195)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 186, 186, 196)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Array[Boolean]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 186, 186, 200)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Array[Boolean]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 186, 186, 200)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in Array[Boolean]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 186, 186, 200)
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala in scala.collection.mutable.ArrayBuffer[scala.collection.mutable.ArrayBuffer[Int]]RangePosition(file:///media/saurav/study%26document/scalaProject/bfs%20graph/bfs.scala, 150, 150, 179)
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+Feb 26, 2020 2:58:33 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7589
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
