@@ -1431,3 +1431,611 @@ WARN  no build tool detected in workspace '/media/saurav/study&document/scalaPro
 WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
 WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
 WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+INFO  started: Metals version 0.8.0 in workspace '/media/saurav/study&document/scalaProject'
+INFO  time: initialize in 4.12s
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/graph%20cycle/Detect.scala in Array[Boolean]RangePosition(file:///media/saurav/study%26document/scalaProject/graph%20cycle/Detect.scala, 220, 220, 234)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/graph%20cycle/Detect.scala in Array[Boolean]RangePosition(file:///media/saurav/study%26document/scalaProject/graph%20cycle/Detect.scala, 220, 220, 234)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/graph%20cycle/Detect.scala in Array[Boolean]RangePosition(file:///media/saurav/study%26document/scalaProject/graph%20cycle/Detect.scala, 220, 220, 234)
+Feb 27, 2020 1:32:34 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.InterruptedException
+java.util.concurrent.CompletionException: java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:27)
+	at scala.meta.pc.OffsetParams.checkCanceled(OffsetParams.java:29)
+	at scala.meta.internal.metals.CompilerOffsetParams.checkCanceled(CompilerOffsetParams.scala:7)
+	at scala.meta.internal.pc.CompletionProvider.$anonfun$completions$1(CompletionProvider.scala:66)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)
+	at scala.collection.Iterator.toStream(Iterator.scala:1415)
+	at scala.collection.Iterator.toStream$(Iterator.scala:1414)
+	at scala.collection.AbstractIterator.toStream(Iterator.scala:1429)
+	at scala.collection.Iterator.$anonfun$toStream$1(Iterator.scala:1415)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1171)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1161)
+	at scala.collection.immutable.StreamIterator.$anonfun$next$1(Stream.scala:1061)
+	at scala.collection.immutable.StreamIterator$LazyCell.v$lzycompute(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator$LazyCell.v(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator.hasNext(Stream.scala:1055)
+	at scala.collection.convert.Wrappers$IteratorWrapper.hasNext(Wrappers.scala:31)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:134)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:40)
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:69)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:125)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:243)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:423)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:55)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at com.google.gson.Gson.toJson(Gson.java:648)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:145)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:59)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.lambda$handleRequest$1(RemoteEndpoint.java:281)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714)
+	... 8 more
+
+something's wrong: no file:///media/saurav/study%26document/scalaProject/graph%20cycle/Detect.scala in scala.collection.mutable.ArrayBuffer[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/graph%20cycle/Detect.scala, 196, 196, 212)
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+Feb 27, 2020 1:39:27 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 27, 2020 1:39:27 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 27, 2020 1:39:27 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 27, 2020 1:39:27 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/graph%20cycle/Detect.scala in scala.collection.mutable.ArrayBuffer[scala.collection.mutable.ArrayBuffer[Int]]RangePosition(file:///media/saurav/study%26document/scalaProject/graph%20cycle/Detect.scala, 219, 219, 248)
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+Feb 27, 2020 1:49:48 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1210
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+Feb 27, 2020 2:04:49 AM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: offset 517, count -1, length 1390
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/graph%20cycle/Detect.scala in Array[Boolean]RangePosition(file:///media/saurav/study%26document/scalaProject/graph%20cycle/Detect.scala, 255, 255, 269)
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits/callTrait.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits/trait1.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits/callTrait.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits1/hasNext.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits1/hasNext.scala
+Feb 27, 2020 4:00:21 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2401
+something's wrong: no file:///media/saurav/study%26document/scalaProject/traits1/hasNext.scala in Iterator[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/traits1/hasNext.scala, 96, 96, 114)
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits1/hasNext.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits1/hasNext.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits1/hasNext.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits1/hasNext.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits1/hasNext.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits1/hasNext.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits1/hasNext.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits1/hasNext.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits1/hasNext.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits1/hasNext.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits1/hasNext.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits1/hasNext.scala
+Feb 27, 2020 4:09:38 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3396
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits1/hasNext.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits1/hasNext.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits1/hasNext.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits1/hasNext.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/traits1/hasNext.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+INFO  started: Metals version 0.8.1 in workspace '/media/saurav/study&document/scalaProject'
+INFO  time: initialize in 3.32s
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+Feb 27, 2020 9:42:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+WARN  no build target for: /media/saurav/study&document/scalaProject/isPrime/isPrime.scala
+Feb 27, 2020 9:42:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7
+INFO  no build target: using presentation compiler with only scala-library
+Feb 27, 2020 9:42:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+Feb 27, 2020 9:42:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8
+Feb 27, 2020 9:42:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10
+Feb 27, 2020 9:42:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9
+Feb 27, 2020 9:42:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13
+Feb 27, 2020 9:42:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15
+Feb 27, 2020 9:42:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16
+Feb 27, 2020 9:43:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:743)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:731)
+	at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2108)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:411)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:86)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:131)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	... 3 more
+
+Feb 27, 2020 9:44:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 188
+WARN  no build target for: /media/saurav/study&document/scalaProject/isPrime/isPrime.scala
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.1 in workspace '/media/saurav/study&document/scalaProject'
+INFO  time: initialize in 3.75s
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/isPrime/isPrime.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /media/saurav/study&document/scalaProject/isPrime/isPrime.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/isPrime/isPrime.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrt/sqrt.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrtList/sqrtList.scala
+Feb 28, 2020 10:00:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:411)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:86)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:131)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrtList/sqrtList.scala
+Feb 28, 2020 10:00:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:743)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:731)
+	at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2108)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:411)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:86)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:131)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	... 3 more
+
+something's wrong: no file:///media/saurav/study%26document/scalaProject/sqrtList/sqrtList.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/sqrtList/sqrtList.scala, 117, 117, 132)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/sqrtList/sqrtList.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/sqrtList/sqrtList.scala, 117, 117, 125)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/sqrtList/sqrtList.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/sqrtList/sqrtList.scala, 117, 117, 128)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/sqrtList/sqrtList.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/sqrtList/sqrtList.scala, 117, 117, 129)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/sqrtList/sqrtList.scala in Array[String]RangePosition(file:///media/saurav/study%26document/scalaProject/sqrtList/sqrtList.scala, 117, 117, 130)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/sqrtList/sqrtList.scala in Array[String]RangePosition(file:///media/saurav/study%26document/scalaProject/sqrtList/sqrtList.scala, 117, 117, 130)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/sqrtList/sqrtList.scala in Array[String]RangePosition(file:///media/saurav/study%26document/scalaProject/sqrtList/sqrtList.scala, 117, 117, 130)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/sqrtList/sqrtList.scala in Array[String]RangePosition(file:///media/saurav/study%26document/scalaProject/sqrtList/sqrtList.scala, 117, 117, 130)
+WARN  no build target for: /media/saurav/study&document/scalaProject/sqrtList/sqrtList.scala
+Feb 29, 2020 2:14:48 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:411)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:86)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:131)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+Feb 29, 2020 2:14:59 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:411)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:86)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:131)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+WARN  no build target for: /media/saurav/study&document/scalaProject/isPrime/isPrime.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/isPrime/isPrime.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Feb 29, 2020 8:54:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:411)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:86)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:131)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+WARN  no build target for: /media/saurav/study&document/scalaProject/isPrime/isPrime.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/isPrime/isPrime.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/isPrime/isPrime.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/isPrime/isPrime.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/gates/HalfAdder.scala
+Feb 29, 2020 9:00:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:411)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:86)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:131)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+something's wrong: no file:///media/saurav/study%26document/scalaProject/gates/HalfAdder.scala in List[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/gates/HalfAdder.scala, 65, 65, 79)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/gates/HalfAdder.scala in List[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/gates/HalfAdder.scala, 65, 65, 72)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/gates/HalfAdder.scala in List[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/gates/HalfAdder.scala, 65, 65, 73)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/gates/HalfAdder.scala in List[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/gates/HalfAdder.scala, 65, 65, 74)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/gates/HalfAdder.scala in List[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/gates/HalfAdder.scala, 65, 65, 76)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/gates/HalfAdder.scala in List[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/gates/HalfAdder.scala, 65, 65, 77)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/gates/HalfAdder.scala in List[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/gates/HalfAdder.scala, 65, 65, 78)
+WARN  no build target for: /media/saurav/study&document/scalaProject/gates/HalfAdder.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/gates/HalfAdder.scala
+INFO  started: Metals version 0.8.1 in workspace '/media/saurav/study&document/scalaProject'
+INFO  time: initialize in 3.5s
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/gates/HalfAdder.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/gates/HalfAdder.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+Mar 02, 2020 7:51:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+Mar 02, 2020 7:53:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:411)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:86)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:131)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/cycle_detection_2/A.scala in scala.collection.mutable.ArrayBuffer[scala.collection.mutable.ArrayBuffer[Int]]RangePosition(file:///media/saurav/study%26document/scalaProject/cycle_detection_2/A.scala, 219, 219, 248)
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/cycle_detection_2/A.scala in Array[Boolean]RangePosition(file:///media/saurav/study%26document/scalaProject/cycle_detection_2/A.scala, 255, 255, 269)
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/cycle_detection_2/A.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/cycle_detection_2/A.scala, 276, 276, 291)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/cycle_detection_2/A.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/cycle_detection_2/A.scala, 276, 276, 284)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/cycle_detection_2/A.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/cycle_detection_2/A.scala, 276, 276, 285)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/cycle_detection_2/A.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/cycle_detection_2/A.scala, 276, 276, 286)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/cycle_detection_2/A.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/cycle_detection_2/A.scala, 276, 276, 287)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/cycle_detection_2/A.scala in Array[Boolean]RangePosition(file:///media/saurav/study%26document/scalaProject/cycle_detection_2/A.scala, 276, 276, 290)
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/cycle_detection_2/A.scala in scala.collection.mutable.ArrayBuffer[scala.collection.mutable.ArrayBuffer[Int]]RangePosition(file:///media/saurav/study%26document/scalaProject/cycle_detection_2/A.scala, 219, 219, 248)
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+Mar 02, 2020 9:37:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 993
+Mar 02, 2020 9:37:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1001
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
