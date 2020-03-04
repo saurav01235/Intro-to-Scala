@@ -1,3 +1,4 @@
+// cycle detection in directed graph
 import scala.io.StdIn.readInt
 import scala.collection.mutable.ArrayBuffer
 import  scala.io.StdIn.readLine
@@ -20,7 +21,6 @@ class Dfs{
                
 
         } 
-        check(src)=false
 
       //  println("src: "+src)
            false

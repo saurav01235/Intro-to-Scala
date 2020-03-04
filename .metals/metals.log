@@ -2039,3 +2039,586 @@ WARN  no build tool detected in workspace '/media/saurav/study&document/scalaPro
 WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
 WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
 WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/cycle_detection_2/A.scala in scala.collection.mutable.ArrayBuffer[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/cycle_detection_2/A.scala, 231, 231, 247)
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.1 in workspace '/media/saurav/study&document/scalaProject'
+INFO  time: initialize in 3.41s
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /media/saurav/study&document/scalaProject/pattern/A.scala
+Mar 04, 2020 12:01:32 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:743)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:731)
+	at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2108)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:411)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:86)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:131)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	... 3 more
+
+Mar 04, 2020 12:01:32 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 64
+Mar 04, 2020 12:01:37 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:411)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:86)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:131)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+Mar 04, 2020 12:15:59 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:411)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:86)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:131)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+WARN  no build target for: /media/saurav/study&document/scalaProject/pattern/A.scala
+Mar 04, 2020 12:36:45 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 711
+WARN  no build target for: /media/saurav/study&document/scalaProject/pattern/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/pattern/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/pattern/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/pattern/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/pattern/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/pattern/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/pattern/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/pattern/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/pattern/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+Mar 04, 2020 1:26:10 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:411)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:86)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:131)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/cycle_detection_2/A.scala in Array[Boolean]RangePosition(file:///media/saurav/study%26document/scalaProject/cycle_detection_2/A.scala, 292, 292, 306)
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/cycle_detection_2/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/pattern/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+Mar 04, 2020 1:26:45 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:411)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:86)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:131)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+Mar 04, 2020 2:07:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1374
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological/A.scala in Array[Boolean]RangePosition(file:///media/saurav/study%26document/scalaProject/topological/A.scala, 296, 296, 310)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological/A.scala in Array[Boolean]RangePosition(file:///media/saurav/study%26document/scalaProject/topological/A.scala, 292, 292, 306)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological/A.scala in Array[Boolean]RangePosition(file:///media/saurav/study%26document/scalaProject/topological/A.scala, 292, 292, 306)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological/A.scala in scala.collection.mutable.Stack[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/topological/A.scala, 292, 292, 307)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological/A.scala in scala.collection.mutable.Stack[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/topological/A.scala, 292, 292, 301)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological/A.scala in scala.collection.mutable.Stack[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/topological/A.scala, 292, 292, 302)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological/A.scala in scala.collection.mutable.Stack[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/topological/A.scala, 292, 292, 302)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological/A.scala in scala.collection.mutable.Stack[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/topological/A.scala, 292, 292, 302)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological/A.scala in scala.collection.mutable.Stack[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/topological/A.scala, 292, 292, 302)
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological/A.scala in scala.collection.mutable.Stack[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/topological/A.scala, 292, 292, 302)
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+Mar 04, 2020 2:08:26 AM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:44)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:415)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:52)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:92)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Mar 04, 2020 2:08:27 AM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:44)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:415)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:52)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:92)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Mar 04, 2020 2:08:27 AM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:44)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:415)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:52)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:92)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Mar 04, 2020 2:08:27 AM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:44)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:415)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:52)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:92)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Mar 04, 2020 2:08:37 AM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:44)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:415)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:52)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:92)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Mar 04, 2020 2:08:37 AM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:44)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:415)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:52)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:92)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Mar 04, 2020 2:08:37 AM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:44)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:415)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:52)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:92)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological/A.scala in scala.collection.mutable.Stack[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/topological/A.scala, 292, 292, 302)
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+Mar 04, 2020 2:14:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2039
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/dfs%20graph/Dfs.scala in scala.collection.mutable.ArrayBuffer[scala.collection.mutable.ArrayBuffer[Int]]RangePosition(file:///media/saurav/study%26document/scalaProject/dfs%20graph/Dfs.scala, 184, 184, 213)
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological/A.scala in scala.collection.mutable.ArrayBuffer[scala.collection.mutable.ArrayBuffer[Int]]RangePosition(file:///media/saurav/study%26document/scalaProject/topological/A.scala, 239, 239, 268)
+Mar 04, 2020 2:33:15 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2569
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+Mar 04, 2020 2:34:44 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2661
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological/A.scala in Array[Boolean]RangePosition(file:///media/saurav/study%26document/scalaProject/topological/A.scala, 275, 275, 289)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological/A.scala in scala.collection.mutable.ArrayBuffer[scala.collection.mutable.ArrayBuffer[Int]]RangePosition(file:///media/saurav/study%26document/scalaProject/topological/A.scala, 239, 239, 268)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological/A.scala in scala.collection.mutable.ArrayBuffer[scala.collection.mutable.ArrayBuffer[Int]]RangePosition(file:///media/saurav/study%26document/scalaProject/topological/A.scala, 239, 239, 268)
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+Mar 04, 2020 2:56:47 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:411)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:86)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:131)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala in Array[Boolean]RangePosition(file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala, 245, 245, 259)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala, 266, 266, 281)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala in Array[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala, 266, 266, 275)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala in Array[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala, 266, 266, 276)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala in Array[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala, 266, 266, 276)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala in Array[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala, 266, 266, 276)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala in Array[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala, 266, 266, 276)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala in scala.collection.mutable.Queue[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala, 279, 279, 294)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala in scala.collection.mutable.Queue[<error>]RangePosition(file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala, 279, 279, 288)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala in scala.collection.mutable.Queue[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala, 279, 279, 289)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala in scala.collection.mutable.Queue[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala, 279, 279, 289)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala in scala.collection.mutable.Queue[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala, 279, 279, 289)
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala in scala.collection.mutable.Queue[Int]RangePosition(file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala, 279, 279, 289)
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala in scala.collection.mutable.ArrayBuffer[scala.collection.mutable.ArrayBuffer[Int]]RangePosition(file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala, 209, 209, 238)
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+INFO  started: Metals version 0.8.1 in workspace '/media/saurav/study&document/scalaProject'
+INFO  time: initialize in 3.75s
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+INFO  no build target: using presentation compiler with only scala-library
+Mar 04, 2020 4:53:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+Mar 04, 2020 4:53:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8
+Mar 04, 2020 4:53:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/isPrime/isPrime.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/dfs graph/Dfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/gates/HalfAdder.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/graph cycle/Detect.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/function/funtion.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/pattern/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+Mar 04, 2020 9:06:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1456
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+something's wrong: no file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala in scala.collection.mutable.ArrayBuffer[scala.collection.mutable.ArrayBuffer[Int]]RangePosition(file:///media/saurav/study%26document/scalaProject/topological_bfs/A.scala, 209, 209, 238)
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/bfs graph/bfs.scala
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/media/saurav/study&document/scalaProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological_bfs/A.scala
+WARN  no build target for: /media/saurav/study&document/scalaProject/topological/A.scala

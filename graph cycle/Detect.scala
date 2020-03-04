@@ -10,7 +10,7 @@ class Dfs{
           visit(src)=true
             for(i<-value(src)){
                 if(visit(i)==false){
-                    println("treve: "+i+" src: "+src+" parent: "+parent)
+                   // println("treve: "+i+" src: "+src+" parent: "+parent)
                if (traversal(i,value,visit,src)==true){
                    println("treve: "+i+" 'inside true'  src: "+src+" parent: "+parent)
                    return true
