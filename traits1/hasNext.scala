@@ -11,7 +11,7 @@ class IntIterator(to:Int) extends Iterator[Int]{
             current +=1
             t
         } else 0
-    }
+    }//h
 
 }
 object A extends App{
