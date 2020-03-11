@@ -2,7 +2,7 @@
 import scala.io.StdIn.{readLine,readInt}
 import scala.collection.mutable._
 
-object TopologicalSort{
+object diskstra{
     def topSort(src:Int,visit:Array[Boolean],st:Stack[Int],list:ArrayBuffer[ArrayBuffer[(Int,Int)]]):Stack[Int]={
         for(i<-list(src)){
             if(visit(i._1)==false){
@@ -52,12 +52,6 @@ object TopologicalSort{
         println()
 
 
-
-
-
-
-
-
     }
 }
 
@@ -87,7 +81,7 @@ object A extends App{
     println(s"Sortest path from vertex $S to all other vertex is: ")
     //println(sortestPath(S,V,list))
     //val ts=new TopologicalSort
-    TopologicalSort.sortestPath(S,V,list)
+    diskstra.sortestPath(S,V,list)
 
 
 

@@ -48,7 +48,7 @@ visit(0)=true
  
 val dfs=new Dfs
 dfs.traversal(0,ll,visit)
-//  println(ll)
+println(ll)
 // println(ll(0)(1)) 
 
 

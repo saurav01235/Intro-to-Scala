@@ -12,29 +12,29 @@ object primSpan{
                 var tem=(src,Int.MaxValue)
                 var tem1=(src,Int.MaxValue)
                 for(k<-0 until visit.length)
-                {  println("outside ")
+                {  //println("outside ")
                     if(visit(k)==true){
-                        println("Inside "+k)
+                        //println("Inside "+k)
                 for(i<-list(k)){
                     if(visit(i._1)==false)
                     {
                         if(dis(i._1)>=i._2){
                             dis(i._1)=i._2
                             tem1=i
-                            println(tem1+ "///")
+                        //    println(tem1+ "///")
                         }
                         if(tem1._2<tem._2){
                         tem=tem1
                         sorce(c)=k
                         c +=1
-                        println(tem+ "//---/")
+                     //   println(tem+ "//---/")
                         }
                     }
                 }
             }
         }
-        visit.foreach(print)
-        println()
+        //9visit.foreach(print)
+        //println()
                 visit(tem._1)=true
                 q.enqueue(tem)
                 prim(tem._1,list,dis,visit,q,V,sorce)
